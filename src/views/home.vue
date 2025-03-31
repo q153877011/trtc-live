@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div style="display: flex; align-items:center; height: 100vh;">
   <pre-live-view
-    style="margin-top: 500px"
     :user-info="userInfo"
     :room-id="givenRoomId"
     :enable-scheduled-live="true"
