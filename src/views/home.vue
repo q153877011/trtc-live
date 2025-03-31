@@ -83,9 +83,9 @@ function bodyConfirm() {
   let currentUserInfo = getBasicInfo(Number(sdkAppId), sdkSecretyKey);
   console.log('currentUserInfo======', currentUserInfo)
   currentUserInfo && sessionStorage.setItem('tuiLive-userInfo', JSON.stringify(currentUserInfo));
-  userInfo.userId = currentUserInfo?.userId;
-  userInfo.userName = currentUserInfo?.userName;
-  userInfo.avatarUrl = currentUserInfo?.avatarUrl;
+  userInfo.userId = currentUserInfo?.userId || '';
+  userInfo.userName = currentUserInfo?.userName || '';
+  userInfo.avatarUrl = currentUserInfo?.avatarUrl || '';
   sessionStorage.setItem('tuiLive-userInfo', JSON.stringify({
     userId: userInfo.userId,
     userName: userInfo.userName,
@@ -195,8 +195,8 @@ async function handleInit() {
   userInfo.userId = currentUserInfo?.userId;
   userInfo.userName = currentUserInfo?.userName;
   userInfo.avatarUrl = currentUserInfo?.avatarUrl;
-  userInfo.sdkAppId = sessionStorage.getItem('appId');
-  userInfo.sdkSecretKey = sessionStorage.getItem('sdkSecretKey');
+  userInfo.sdkAppId = sessionStorage.getItem('appId') || '';
+  userInfo.sdkSecretKey = sessionStorage.getItem('sdkSecretKey') || '';
   const { userId, sdkAppId, userSig } = currentUserInfo;
   await liveRoom.login({ sdkAppId, userId, userSig });
   if (givenRoomId.value) {
