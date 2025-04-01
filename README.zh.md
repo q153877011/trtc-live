@@ -6,6 +6,12 @@
 
 <img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout.png"/>
 
+## 快速部署
+
+通过 EdgeOne pages 快速部署模版，可以零代码完成你的直播间搭建。
+
+你可以点击左侧的"查看演示"按钮查看在线演示。
+
 ## 环境准备
 
 - Node.js 版本：Node.js ≥ 16.19.1（推荐使用官方 LTS 版本，npm 版本请与 node 版本匹配）。
