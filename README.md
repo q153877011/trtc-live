@@ -4,8 +4,6 @@ English | [简体中文](README.zh.md)
 
 This document describes how to quickly complete the TUILiveKit example project and experience high-quality live. With this document, you can run through the Demo in 10 minutes and start your own live.
 
-<img src="https://web.sdk.qcloud.com/trtc/live/web/image/pc-layout-en.png"/>
-
 <img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout-en.png"/>
 
 ## Quick Deployment
@@ -13,8 +11,6 @@ This document describes how to quickly complete the TUILiveKit example project a
 Quickly deploy templates through EdgeOne pages to build your live streaming room with zero code.
 
 You can click the "View Demo" button on the left to view the online demonstration.
-
-
 
 ## Prerequisites
 
