@@ -14,6 +14,8 @@ You can click the "View Demo" button on the left to view the online demonstratio
 
 ## Prerequisites
 
+Original development repository address: [https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3)
+
 - Node.js version: Node.js ≥ 16.19.1 (we recommend using the official LTS version, please match the npm version with the node version).
 - Modern browser，supporting [WebRTC APIs](https://caniuse.com/?search=webrtc)。
 

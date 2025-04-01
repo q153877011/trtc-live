@@ -14,6 +14,8 @@
 
 ## 环境准备
 
+原始开发仓库地址：[https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3)
+
 - Node.js 版本：Node.js ≥ 16.19.1（推荐使用官方 LTS 版本，npm 版本请与 node 版本匹配）。
 - 现代浏览器，支持 [WebRTC APIs](https://cloud.tencent.com/document/product/647/17249)。
 
