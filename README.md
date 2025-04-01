@@ -8,6 +8,14 @@ This document describes how to quickly complete the TUILiveKit example project a
 
 <img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout-en.png"/>
 
+## Quick Deployment
+
+Quickly deploy templates through EdgeOne pages to build your live streaming room with zero code.
+
+You can click the "View Demo" button on the left to view the online demonstration.
+
+
+
 ## Prerequisites
 
 - Node.js version: Node.js ≥ 16.19.1 (we recommend using the official LTS version, please match the npm version with the node version).

@@ -75,12 +75,11 @@ function bodyConfirm() {
     alert('Please input SDKAppID and SDKSecretKey');
     return;
   }
-  sessionStorage.setItem('appId', sdkAppId)
+  sessionStorage.setItem('sdkAppId', sdkAppId)
   sessionStorage.setItem('sdkSecretKey', sdkSecretyKey)
   userInfo.sdkAppId = sdkAppId;
   userInfo.sdkSecretKey = sdkSecretyKey;
   let currentUserInfo = getBasicInfo(Number(sdkAppId), sdkSecretyKey);
-  console.log('currentUserInfo======', currentUserInfo)
   currentUserInfo && sessionStorage.setItem('tuiLive-userInfo', JSON.stringify(currentUserInfo));
   userInfo.userId = currentUserInfo?.userId || '';
   userInfo.userName = currentUserInfo?.userName || '';
@@ -126,9 +125,6 @@ async function generateRoomId(): Promise<string> {
  * Processing Click [Create Room]
 **/
 async function handleCreateLive(roomOption: Record<string, any>) {
-  console.log('===================')
-  console.log(show)
-  console.log(userInfo)
   if(!userInfo.sdkAppId || !userInfo.sdkSecretKey) {
      show.value = true;
      return;
@@ -175,7 +171,7 @@ function handleUpdateUserName(userName: string) {
 async function handleLogOut() {
   sessionStorage.removeItem('tuiLive-roomInfo');
   sessionStorage.removeItem('tuiLive-userInfo');
-  sessionStorage.removeItem('appId');
+  sessionStorage.removeItem('sdkAppId');
   sessionStorage.removeItem('sdkSecretKey');
 /**
  * The accessor handles the logout method
@@ -194,7 +190,7 @@ async function handleInit() {
   userInfo.userId = currentUserInfo?.userId;
   userInfo.userName = currentUserInfo?.userName;
   userInfo.avatarUrl = currentUserInfo?.avatarUrl;
-  userInfo.sdkAppId = sessionStorage.getItem('appId') || '';
+  userInfo.sdkAppId = sessionStorage.getItem('sdkAppId') || '';
   userInfo.sdkSecretKey = sessionStorage.getItem('sdkSecretKey') || '';
   const { userId, sdkAppId, userSig } = currentUserInfo;
   await liveRoom.login({ sdkAppId, userId, userSig });

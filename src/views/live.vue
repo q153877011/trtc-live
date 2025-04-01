@@ -16,7 +16,7 @@ const { t } = useI18n();
 const roomInfo = sessionStorage.getItem('tuiLive-roomInfo');
 const userInfo = sessionStorage.getItem('tuiLive-userInfo');
 const roomId = String(route.query.roomId);
-const appId = Number(sessionStorage.getItem('appId'))
+const sdkAppId = Number(sessionStorage.getItem('sdkAppId'))
 const sdkSecretKey = sessionStorage.getItem('sdkSecretKey')
 const isAnchor = safelyParse(roomInfo as string)?.action === 'createLive';
 let isExpectedJump = false;
@@ -40,8 +40,7 @@ if (!roomId) {
 
 async function handleAnchorInitLogic() {
   const { roomParam, hasCreated } = safelyParse(roomInfo as string);
-  let { sdkAppId, userId, userSig, userName, avatarUrl } = safelyParse(userInfo as string);
-  sdkAppId = Number(sdkAppId)
+  let { userId, userSig, userName, avatarUrl } = safelyParse(userInfo as string);
   saveUserInfoToBasicInfo(userId, userName, avatarUrl);
   try {
     await liveRoom.login({ sdkAppId, userId, userSig });
@@ -63,12 +62,8 @@ async function handleAnchorInitLogic() {
 
 async function handleAudienceInitLogic() {
   try {
-    console.log(appId, sdkSecretKey)
-    const currentUserInfo = JSON.stringify(getBasicInfo(Number(appId), sdkSecretKey));
-    console.log(currentUserInfo)
-    let { sdkAppId, userId, userSig, userName, avatarUrl } = safelyParse(currentUserInfo as string);
-    sdkAppId = Number(sdkAppId)
-    console.log('sdkappid++++++++++++++++', sdkAppId)
+    const currentUserInfo = JSON.stringify(getBasicInfo(Number(sdkAppId), sdkSecretKey));
+    let { userId, userSig, userName, avatarUrl } = safelyParse(currentUserInfo as string);
     saveUserInfoToBasicInfo(userId, userName, avatarUrl);
     await liveRoom.login({ sdkAppId, userId, userSig });
     await liveRoom.setSelfInfo({ userName, avatarUrl });
@@ -118,7 +113,7 @@ onBeforeRouteLeave((to: any, from: any, next: any) => {
 const backToPage = (page: string, shouldClearUserInfo: boolean) => {
   sessionStorage.removeItem('tuiLive-roomInfo');
   shouldClearUserInfo && sessionStorage.removeItem('tuiLive-userInfo');
-  sessionStorage.removeItem('appId');
+  sessionStorage.removeItem('sdkAppId');
   sessionStorage.removeItem('sdkSecretKey');
   goToPage(page);
 };
