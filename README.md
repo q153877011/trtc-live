@@ -2,19 +2,22 @@ English | [简体中文](README.zh.md)
 
 # TUILiveKit 
 
-This document describes how to quickly complete the TUILiveKit example project and experience high-quality live. With this document, you can run through the Demo in 10 minutes and start your own live.
+This template aims to help users quickly deploy and experience high-quality online live streaming. By reading this documentation, you will learn how to quickly run the TUILiveKit sample project and perform secondary development. In just 5 minutes, you can successfully run the Demo and launch a live streaming experience that's uniquely yours.
+
 
 <img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout-en.png"/>
 
 ## Quick Deployment
 
-Quickly deploy templates through EdgeOne pages to build your live streaming room with zero code.
+With EdgeOne pages, you can achieve zero-code live streaming room setup through quick template deployment.
 
-You can click the "View Demo" button on the left to view the online demonstration.
+You can click the "View Demo" button on the left to experience the online demonstration.
+
+Please note that the deployment template is based on secondary development of the original repository code, mainly for experiencing quick deployment features and online Demo. If you need to develop more extensive features, we recommend using the original repository code for in-depth development. Original development repository address: [https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3).
+
+The following tutorial will provide detailed guidance on how to quickly run and experience the Demo.
 
 ## Prerequisites
-
-Original development repository address: [https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3)
 
 - Node.js version: Node.js ≥ 16.19.1 (we recommend using the official LTS version, please match the npm version with the node version).
 - Modern browser，supporting [WebRTC APIs](https://caniuse.com/?search=webrtc)。
@@ -34,7 +37,7 @@ Original development repository address: [https://github.com/Tencent-RTC/TUILive
 
 ## Configure Demo
 1. [Activate the TUILiveKit service](https://trtc.io/document/60033?platform=ios&product=live)，get the **SDKAppID** and **SDKSecretKey**.
-   <img src="https://web.sdk.qcloud.com/trtc/live/web/image/active-livekit-en.png"/>
+   <img src="https://cloudcache.tencent-cloud.com/qcloud/ui/static/static_source_business/cf5d54b3-4682-4f6b-88ee-2ce9bcc86013.png"/>
 
 2. Open the `TUILiveKit/Web/web-vite-vue3/src/config/basic-info-config.js` file and enter the **SDKAppID** and **SDKSecretKey** you got when you activated the service:
    <img src="https://web.sdk.qcloud.com/trtc/live/web/image/supplementary-config.png"/>

@@ -1,20 +1,20 @@
 # TUILiveKit 
 
-本文档主要介绍如何快速跑通 TUILiveKit 示例工程，体验高质量在线直播。跟随本文档，您可以在 10 分钟内跑通 Demo，并开启一场属于您自己的直播。
-
-<img src="https://web.sdk.qcloud.com/trtc/live/web/image/pc-layout.png"/>
+本模版旨在帮助用户快速部署并体验高质量的在线直播。通过阅读本文档，您将了解如何迅速运行 TUILiveKit 示例工程并进行二次开发。只需 5 分钟，您便可成功运行 Demo，并开启一场专属于您的直播体验。
 
 <img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout.png"/>
 
 ## 快速部署
 
-通过 EdgeOne pages 快速部署模版，可以零代码完成你的直播间搭建。
+借助 EdgeOne pages，您可以通过快速部署模版的方式，实现零代码搭建直播间的目标。
 
-你可以点击左侧的"查看演示"按钮查看在线演示。
+您可以点击左侧的"View Demo"按钮，体验在线演示效果。
+
+请注意，部署模版是在开发仓库代码基础上进行的二次开发，主要用于体验快速部署功能和在线 Demo。若您需要开发更丰富的功能，建议使用原始仓库代码进行深度开发。原始开发仓库地址：[https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3)。
+
+以下教程将详细指导您如何快速运行并体验 Demo。
 
 ## 环境准备
-
-原始开发仓库地址：[https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3](https://github.com/Tencent-RTC/TUILiveKit/tree/main/Web/web-vite-vue3)
 
 - Node.js 版本：Node.js ≥ 16.19.1（推荐使用官方 LTS 版本，npm 版本请与 node 版本匹配）。
 - 现代浏览器，支持 [WebRTC APIs](https://cloud.tencent.com/document/product/647/17249)。
@@ -34,7 +34,7 @@
 
 ## 配置 Demo
 1. 激活 [TUILiveKit](https://cloud.tencent.com/document/product/647/105439) 服务。SDKAppID 和 SDKSecretKey。
-   <img src="https://web.sdk.qcloud.com/trtc/live/web/image/active-livekit.png"/>
+   <img src="https://cloudcache.tencent-cloud.com/qcloud/ui/static/static_source_business/cf5d54b3-4682-4f6b-88ee-2ce9bcc86013.png"/>
 
 2. 打开 `TUILiveKit/Web/web-vite-vue3/src/config/basic-info-config.js` 文件，并输入激活服务时获得的 `SDKAppID` 和 `SDKSecretKey`:
    <img src="https://web.sdk.qcloud.com/trtc/live/web/image/supplementary-config.png"/>
