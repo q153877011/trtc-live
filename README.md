@@ -17,6 +17,8 @@ Please note that the deployment template is based on secondary development of th
 
 The following tutorial will provide detailed guidance on how to quickly run and experience the Demo.
 
+<a href="https://edgeone.ai/pages/new?from=github&amp;template=https://github.com/q153877011/trtc-live&amp;from=github" rel="nofollow"><img src="https://camo.githubusercontent.com/6a94a67f6a020d5810ef905549fc5255bf99ccd09f17881b6855b332b579a364/68747470733a2f2f63646e7374617469632e74656e63656e7463732e636f6d2f656467656f6e652f70616765732f6465706c6f792e737667" alt="Deploy with EdgeOne Pages" data-canonical-src="https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg" style="max-width: 100%;"></a>
+
 ## Prerequisites
 
 - Node.js version: Node.js ≥ 16.19.1 (we recommend using the official LTS version, please match the npm version with the node version).
