@@ -1,5 +1,3 @@
-English | [简体中文](README.zh.md)
-
 # TUILiveKit 
 
 This template aims to help users quickly deploy and experience high-quality online live streaming. By reading this documentation, you will learn how to quickly run the TUILiveKit sample project and perform secondary development. In just 5 minutes, you can successfully run the Demo and launch a live streaming experience that's uniquely yours.
