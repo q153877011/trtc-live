@@ -56,7 +56,6 @@ export function getBasicInfo(sdkappid, sdksecretykey) {
   SDKAPPID = sdkappid;
   SDKSECRETKEY = sdksecretykey;
   if (SDKAPPID === Number(0) || SDKSECRETKEY === String('')) {
-    alert('Please configure your SDKAPPID in config/basic-info-config.js');
     return;
   }
   const generator = new LibGenerateTestUserSig(Number(SDKAPPID), SDKSECRETKEY, EXPIRETIME);
