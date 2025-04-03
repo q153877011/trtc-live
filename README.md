@@ -1,9 +1,7 @@
-# TUILiveKit 
+# TRTC Live UIKit
 
 This template aims to help users quickly deploy and experience high-quality online live streaming. By reading this documentation, you will learn how to quickly run the TUILiveKit sample project and perform secondary development. In just 5 minutes, you can successfully run the Demo and launch a live streaming experience that's uniquely yours.
 
-
-<img src="https://web.sdk.qcloud.com/trtc/live/web/image/h5-layout-en.png"/>
 
 ## Quick Deployment
 
